@@ -6,7 +6,7 @@ import {devices, groups, events as mockZHEvents, resetGroupMembers, returnDevice
 
 import stringify from 'json-stable-stringify-without-jsonify';
 
-import {toZigbee as zhcToZigbee} from 'zigbee-herdsman-converters';
+import {toZigbee as zhcToZigbee} from '@namelessd76/zigbee-herdsman-converters';
 
 import {Controller} from '../../lib/controller';
 import * as settings from '../../lib/util/settings';

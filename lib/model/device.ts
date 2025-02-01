@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 import {CustomClusters} from 'zigbee-herdsman/dist/zspec/zcl/definition/tstype';
 
 import * as settings from '../util/settings';

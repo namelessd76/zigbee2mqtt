@@ -3,7 +3,7 @@ import type {Zigbee2MQTTAPI} from 'lib/types/api';
 import bind from 'bind-decorator';
 import stringify from 'json-stable-stringify-without-jsonify';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import Device from '../model/device';
 import logger from '../util/logger';

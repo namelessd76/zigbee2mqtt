@@ -1,6 +1,6 @@
-import type * as zhc from 'zigbee-herdsman-converters';
+import type * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
-import {addDefinition, removeExternalDefinitions} from 'zigbee-herdsman-converters';
+import {addDefinition, removeExternalDefinitions} from '@namelessd76/zigbee-herdsman-converters';
 
 import logger from '../util/logger';
 import ExternalJSExtension from './externalJS';

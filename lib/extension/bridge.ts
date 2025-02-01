@@ -10,7 +10,7 @@ import winston from 'winston';
 import Transport from 'winston-transport';
 
 import {Zcl} from 'zigbee-herdsman';
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import Device from '../model/device';
 import Group from '../model/group';
@@ -93,7 +93,7 @@ export default class Bridge extends Extension {
 
         this.zigbee2mqttVersion = await utils.getZigbee2MQTTVersion();
         this.zigbeeHerdsmanVersion = await utils.getDependencyVersion('zigbee-herdsman');
-        this.zigbeeHerdsmanConvertersVersion = await utils.getDependencyVersion('zigbee-herdsman-converters');
+        this.zigbeeHerdsmanConvertersVersion = await utils.getDependencyVersion('@namelessd76/zigbee-herdsman-converters');
         this.coordinatorVersion = await this.zigbee.getCoordinatorVersion();
 
         this.eventBus.onEntityRenamed(this, async () => {

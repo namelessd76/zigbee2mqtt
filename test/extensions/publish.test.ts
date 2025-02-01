@@ -7,7 +7,7 @@ import {devices, groups, events as mockZHEvents} from '../mocks/zigbeeHerdsman';
 
 import stringify from 'json-stable-stringify-without-jsonify';
 
-import {toZigbee} from 'zigbee-herdsman-converters';
+import {toZigbee} from '@namelessd76/zigbee-herdsman-converters';
 
 import {Controller} from '../../lib/controller';
 import {loadTopicGetSetRegex} from '../../lib/extension/publish';

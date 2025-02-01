@@ -9,7 +9,7 @@ import bind from 'bind-decorator';
 import stringify from 'json-stable-stringify-without-jsonify';
 
 import {setLogger as zhSetLogger} from 'zigbee-herdsman';
-import {setLogger as zhcSetLogger} from 'zigbee-herdsman-converters';
+import {setLogger as zhcSetLogger} from '@namelessd76/zigbee-herdsman-converters';
 
 import EventBus from './eventBus';
 import ExtensionAvailability from './extension/availability';

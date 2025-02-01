@@ -79,7 +79,7 @@ describe('Extension: HomeAssistant', () => {
 
     it('Should not have duplicate type/object_ids in a mapping', async () => {
         const duplicated: string[] = [];
-        (await import('zigbee-herdsman-converters')).definitions.forEach((d) => {
+        (await import('@namelessd76/zigbee-herdsman-converters')).definitions.forEach((d) => {
             const exposes = typeof d.exposes == 'function' ? d.exposes(undefined, undefined) : d.exposes;
             const device = {
                 definition: d,

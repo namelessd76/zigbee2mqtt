@@ -1,4 +1,4 @@
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import utils from '../util/utils';
 import Extension from './extension';

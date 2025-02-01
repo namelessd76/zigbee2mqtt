@@ -11,7 +11,7 @@ import path from 'node:path';
 
 import stringify from 'json-stable-stringify-without-jsonify';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import {Controller} from '../../lib/controller';
 import * as settings from '../../lib/util/settings';

@@ -3,7 +3,7 @@ import assert from 'node:assert';
 import bind from 'bind-decorator';
 import stringify from 'json-stable-stringify-without-jsonify';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import logger from '../util/logger';
 import * as settings from '../util/settings';

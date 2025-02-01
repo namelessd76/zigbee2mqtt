@@ -1,4 +1,4 @@
-import type * as zhc from 'zigbee-herdsman-converters';
+import type * as zhc from '@namelessd76/zigbee-herdsman-converters';
 import type {ClusterDefinition, ClusterName, CustomClusters} from 'zigbee-herdsman/dist/zspec/zcl/definition/tstype';
 
 import type {LogLevel, schemaJson} from '../util/settings';

@@ -1,5 +1,5 @@
 import type {Zigbee2MQTTAPI, Zigbee2MQTTResponse, Zigbee2MQTTResponseEndpoints, Zigbee2MQTTScene} from 'lib/types/api';
-import type * as zhc from 'zigbee-herdsman-converters';
+import type * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import assert from 'node:assert';
 import crypto from 'node:crypto';

@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const process = require('process');
 const {execSync} = require('child_process');
-const zhc = require('zigbee-herdsman-converters');
+const zhc = require('@namelessd76/zigbee-herdsman-converters');
 
 const z2mTillVersion = process.argv[2];
 const zhcTillVersion = process.argv[3];
@@ -18,7 +18,7 @@ const changelogs = [
     {
         tillVersion: zhcTillVersion,
         project: 'koenkk/zigbee-herdsman-converters',
-        contents: fs.readFileSync(path.join(__dirname, '..', 'node_modules', 'zigbee-herdsman-converters', 'CHANGELOG.md'), 'utf-8').split('\n'),
+        contents: fs.readFileSync(path.join(__dirname, '..', 'node_modules', '@namelessd76/zigbee-herdsman-converters', 'CHANGELOG.md'), 'utf-8').split('\n'),
     },
     {
         tillVersion: zhTillVersion,

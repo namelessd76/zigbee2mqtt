@@ -4,7 +4,7 @@ import {mockMQTTPublishAsync} from '../mocks/mqtt';
 import {flushPromises} from '../mocks/utils';
 import {devices, events as mockZHEvents} from '../mocks/zigbeeHerdsman';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import {Controller} from '../../lib/controller';
 import * as settings from '../../lib/util/settings';

@@ -34,10 +34,10 @@ describe('Utils', () => {
             fs.readFileSync(path.join(__dirname, '..', 'node_modules', 'zigbee-herdsman', 'package.json'), 'utf8'),
         ).version;
         const versionHerdsmanConverters = JSON.parse(
-            fs.readFileSync(path.join(__dirname, '..', 'node_modules', 'zigbee-herdsman-converters', 'package.json'), 'utf8'),
+            fs.readFileSync(path.join(__dirname, '..', 'node_modules', '@namelessd76/zigbee-herdsman-converters', 'package.json'), 'utf8'),
         ).version;
         expect(await utils.getDependencyVersion('zigbee-herdsman')).toStrictEqual({version: versionHerdsman});
-        expect(await utils.getDependencyVersion('zigbee-herdsman-converters')).toStrictEqual({version: versionHerdsmanConverters});
+        expect(await utils.getDependencyVersion('@namelessd76/zigbee-herdsman-converters')).toStrictEqual({version: versionHerdsmanConverters});
     });
 
     it('To local iso string', async () => {

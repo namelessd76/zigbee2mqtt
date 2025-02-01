@@ -5,7 +5,7 @@ import debounce from 'debounce';
 import stringify from 'json-stable-stringify-without-jsonify';
 import throttle from 'throttleit';
 
-import * as zhc from 'zigbee-herdsman-converters';
+import * as zhc from '@namelessd76/zigbee-herdsman-converters';
 
 import logger from '../util/logger';
 import * as settings from '../util/settings';

@@ -93,7 +93,7 @@ describe('Extension: Bridge', () => {
         await resetExtension();
         const version = await utils.getZigbee2MQTTVersion();
         const zhVersion = await utils.getDependencyVersion('zigbee-herdsman');
-        const zhcVersion = await utils.getDependencyVersion('zigbee-herdsman-converters');
+        const zhcVersion = await utils.getDependencyVersion('@namelessd76/zigbee-herdsman-converters');
         const directory = settings.get().advanced.log_directory;
         // console.log(mockMQTTPublishAsync.mock.calls.find((c) => c[0] === 'zigbee2mqtt/bridge/info')![1]);
         expect(mockMQTTPublishAsync).toHaveBeenCalledWith(
@@ -3193,7 +3193,7 @@ describe('Extension: Bridge', () => {
                 data: {
                     id: '0x0017880104e45524',
                     source:
-                        "const {onOff} = require('zigbee-herdsman-converters/lib/modernExtend');\n" +
+                        "const {onOff} = require('@namelessd76/zigbee-herdsman-converters/lib/modernExtend');\n" +
                         '\n' +
                         'const definition = {\n' +
                         "    zigbeeModel: ['lumi.plug'],\n" +
